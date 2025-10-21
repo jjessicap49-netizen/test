@@ -1,13 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
     <head>
-        <title>메인페이지!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>연락처 - MyWebsite</title>
+        <link rel="stylesheet" href="/test/styles.css">
     </head>
     <body>
-        <h1>안녕하세요!</h1>
-        <p>contact 페이지에 오신 것을 환영합니다.</p>
-        <a href="/test/">메인 페이지로 이동</a>
-        <a href="/test/about">소개 페이지로 이동</a>
-        <a href="/test/contact">연락처 페이지로 이동</a>
+        <nav>
+            <div class="nav-container">
+                <a href="/test/" class="logo">MyWebsite</a>
+                <div class="nav-links">
+                    <a href="/test/">홈</a>
+                    <a href="/test/about">소개</a>
+                    <a href="/test/services">서비스</a>
+                    <a href="/test/blog">블로그</a>
+                    <a href="/test/contact">연락처</a>
+                    <button id="theme-toggle" class="theme-toggle">🌙 다크 모드</button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="header-section">
+                <h1>연락주세요 📧</h1>
+                <p>궁금한 사항이 있으시면 언제든지 문의해주세요</p>
+            </div>
+
+            <div class="card-grid">
+                <div class="card">
+                    <div class="service-icon">📍</div>
+                    <h3>주소</h3>
+                    <p>서울특별시 강남구</p>
+                    <p>테헤란로 123</p>
+                </div>
+
+                <div class="card">
+                    <div class="service-icon">📞</div>
+                    <h3>전화</h3>
+                    <p>02-1234-5678</p>
+                    <p>평일 09:00 - 18:00</p>
+                </div>
+
+                <div class="card">
+                    <div class="service-icon">✉️</div>
+                    <h3>이메일</h3>
+                    <p>info@mywebsite.com</p>
+                    <p>support@mywebsite.com</p>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <h2>문의하기</h2>
+                <p style="margin-bottom: 2rem;">아래 양식을 작성해주시면 빠른 시일 내에 답변 드리겠습니다.</p>
+
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">이름 *</label>
+                        <input type="text" id="name" name="name" required placeholder="홍길동">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">이메일 *</label>
+                        <input type="email" id="email" name="email" required placeholder="example@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">전화번호</label>
+                        <input type="tel" id="phone" name="phone" placeholder="010-1234-5678">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">제목</label>
+                        <input type="text" id="subject" name="subject" placeholder="문의 제목을 입력해주세요">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">메시지 *</label>
+                        <textarea id="message" name="message" required placeholder="문의 내용을 자세히 작성해주세요"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn" style="width: 100%;">메시지 보내기</button>
+                </form>
+            </div>
+
+            <div class="card" style="margin-top: 2rem;">
+                <h2>자주 묻는 질문</h2>
+                <div style="margin-top: 1rem;">
+                    <h3 style="margin-top: 1rem;">❓ 영업 시간은 어떻게 되나요?</h3>
+                    <p>평일 오전 9시부터 오후 6시까지 운영하며, 주말 및 공휴일은 휴무입니다.</p>
+
+                    <h3 style="margin-top: 1rem;">❓ 상담은 어떻게 받을 수 있나요?</h3>
+                    <p>전화, 이메일, 또는 위의 문의 양식을 통해 상담을 신청하실 수 있습니다.</p>
+
+                    <h3 style="margin-top: 1rem;">❓ 답변은 얼마나 걸리나요?</h3>
+                    <p>영업일 기준 24시간 내에 답변드리도록 노력하고 있습니다.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 MyWebsite. All rights reserved.</p>
+        </footer>
+
+        <script src="/test/script.js"></script>
     </body>
 </html>

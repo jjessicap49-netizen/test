@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>블로그 - MyWebsite</title>
+        <link rel="stylesheet" href="/test/styles.css">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-container">
+                <a href="/test/" class="logo">MyWebsite</a>
+                <div class="nav-links">
+                    <a href="/test/">홈</a>
+                    <a href="/test/about">소개</a>
+                    <a href="/test/services">서비스</a>
+                    <a href="/test/blog">블로그</a>
+                    <a href="/test/contact">연락처</a>
+                    <button id="theme-toggle" class="theme-toggle">🌙 다크 모드</button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="header-section">
+                <h1>블로그 📝</h1>
+                <p>최신 소식과 유용한 정보를 공유합니다</p>
+            </div>
+
+            <div class="blog-post">
+                <h2>웹 개발 트렌드 2025</h2>
+                <div class="blog-meta">
+                    <span>📅 2025년 10월 21일</span> |
+                    <span>✍️ 관리자</span> |
+                    <span>🏷️ 웹개발, 트렌드</span>
+                </div>
+                <p>2025년 웹 개발 분야에서 주목해야 할 최신 트렌드를 소개합니다. 인공지능의 발전과 함께 웹 개발 환경도 크게 변화하고 있습니다.</p>
+                <p>특히 AI 기반 코드 생성 도구들이 개발자들의 생산성을 크게 향상시키고 있으며, 서버리스 아키텍처와 엣지 컴퓨팅이 더욱 보편화되고 있습니다.</p>
+                <h3>주요 트렌드</h3>
+                <ul>
+                    <li><strong>AI 통합:</strong> ChatGPT와 같은 AI 도구들이 웹 애플리케이션에 통합되고 있습니다.</li>
+                    <li><strong>서버리스:</strong> AWS Lambda, Vercel 등의 서버리스 플랫폼이 인기를 얻고 있습니다.</li>
+                    <li><strong>웹어셈블리:</strong> 고성능 웹 애플리케이션 개발에 WebAssembly 사용이 증가하고 있습니다.</li>
+                    <li><strong>프로그레시브 웹 앱:</strong> PWA가 모바일 앱의 대안으로 자리잡고 있습니다.</li>
+                </ul>
+                <a href="#" class="btn">더 읽기</a>
+            </div>
+
+            <div class="blog-post">
+                <h2>효과적인 UI/UX 디자인 원칙</h2>
+                <div class="blog-meta">
+                    <span>📅 2025년 10월 15일</span> |
+                    <span>✍️ 디자인팀</span> |
+                    <span>🏷️ 디자인, UX</span>
+                </div>
+                <p>사용자 경험을 개선하는 UI/UX 디자인의 핵심 원칙들을 알아봅니다. 좋은 디자인은 사용자가 인지하지 못하는 디자인입니다.</p>
+                <h3>핵심 원칙</h3>
+                <ul>
+                    <li><strong>일관성:</strong> 전체 애플리케이션에서 일관된 디자인 언어를 사용하세요.</li>
+                    <li><strong>단순성:</strong> 복잡함을 제거하고 핵심 기능에 집중하세요.</li>
+                    <li><strong>피드백:</strong> 사용자 행동에 즉각적인 피드백을 제공하세요.</li>
+                    <li><strong>접근성:</strong> 모든 사용자가 쉽게 사용할 수 있도록 디자인하세요.</li>
+                </ul>
+                <a href="#" class="btn">더 읽기</a>
+            </div>
+
+            <div class="blog-post">
+                <h2>JavaScript 성능 최적화 팁</h2>
+                <div class="blog-meta">
+                    <span>📅 2025년 10월 8일</span> |
+                    <span>✍️ 개발팀</span> |
+                    <span>🏷️ JavaScript, 성능</span>
+                </div>
+                <p>웹 애플리케이션의 성능을 향상시키는 JavaScript 최적화 기법들을 소개합니다.</p>
+                <h3>최적화 전략</h3>
+                <ul>
+                    <li><strong>지연 로딩:</strong> 필요한 시점에 리소스를 로드하여 초기 로딩 시간을 단축하세요.</li>
+                    <li><strong>디바운싱/쓰로틀링:</strong> 이벤트 핸들러의 호출 빈도를 제어하세요.</li>
+                    <li><strong>메모이제이션:</strong> 계산 결과를 캐싱하여 중복 계산을 방지하세요.</li>
+                    <li><strong>번들 최적화:</strong> 코드 스플리팅으로 번들 크기를 줄이세요.</li>
+                </ul>
+                <a href="#" class="btn">더 읽기</a>
+            </div>
+
+            <div class="blog-post">
+                <h2>반응형 웹 디자인의 중요성</h2>
+                <div class="blog-meta">
+                    <span>📅 2025년 10월 1일</span> |
+                    <span>✍️ 디자인팀</span> |
+                    <span>🏷️ 반응형, 모바일</span>
+                </div>
+                <p>다양한 기기에서 완벽한 사용자 경험을 제공하는 반응형 디자인의 중요성을 알아봅니다.</p>
+                <h3>반응형 디자인 핵심 요소</h3>
+                <ul>
+                    <li><strong>유연한 그리드:</strong> 픽셀 대신 퍼센트나 fr 단위를 사용하세요.</li>
+                    <li><strong>미디어 쿼리:</strong> 다양한 화면 크기에 맞춰 스타일을 조정하세요.</li>
+                    <li><strong>유연한 이미지:</strong> 이미지가 컨테이너에 맞춰 크기가 조정되도록 하세요.</li>
+                    <li><strong>모바일 우선:</strong> 모바일부터 디자인하고 점차 확장하세요.</li>
+                </ul>
+                <a href="#" class="btn">더 읽기</a>
+            </div>
+
+            <div class="blog-post">
+                <h2>보안을 위한 웹 개발 베스트 프랙티스</h2>
+                <div class="blog-meta">
+                    <span>📅 2025년 9월 25일</span> |
+                    <span>✍️ 보안팀</span> |
+                    <span>🏷️ 보안, 개발</span>
+                </div>
+                <p>웹 애플리케이션의 보안을 강화하는 필수 개발 방법론들을 소개합니다.</p>
+                <h3>보안 체크리스트</h3>
+                <ul>
+                    <li><strong>입력 검증:</strong> 모든 사용자 입력을 서버 측에서 검증하세요.</li>
+                    <li><strong>HTTPS 사용:</strong> 모든 통신을 암호화하세요.</li>
+                    <li><strong>XSS 방지:</strong> 사용자 입력을 적절히 이스케이프하세요.</li>
+                    <li><strong>CSRF 보호:</strong> CSRF 토큰을 사용하여 요청을 검증하세요.</li>
+                    <li><strong>정기 업데이트:</strong> 의존성 패키지를 항상 최신 상태로 유지하세요.</li>
+                </ul>
+                <a href="#" class="btn">더 읽기</a>
+            </div>
+
+            <div class="card" style="margin-top: 3rem; text-align: center;">
+                <h2>블로그 구독하기</h2>
+                <p>최신 글을 이메일로 받아보세요!</p>
+                <div class="form-container" style="max-width: 400px; margin: 1.5rem auto 0;">
+                    <div class="form-group">
+                        <input type="email" placeholder="이메일 주소를 입력하세요" style="width: 100%;">
+                    </div>
+                    <button class="btn" style="width: 100%;">구독하기</button>
+                </div>
+            </div>
+
+            <div class="card-grid" style="margin-top: 2rem;">
+                <div class="card">
+                    <h3>카테고리</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin: 0.5rem 0;">📌 웹개발 (12)</li>
+                        <li style="margin: 0.5rem 0;">🎨 디자인 (8)</li>
+                        <li style="margin: 0.5rem 0;">🚀 마케팅 (6)</li>
+                        <li style="margin: 0.5rem 0;">🔒 보안 (5)</li>
+                        <li style="margin: 0.5rem 0;">💡 팁&트릭 (10)</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>인기 글</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin: 0.5rem 0;">🔥 React vs Vue: 2025</li>
+                        <li style="margin: 0.5rem 0;">🔥 CSS Grid 완벽 가이드</li>
+                        <li style="margin: 0.5rem 0;">🔥 TypeScript 시작하기</li>
+                        <li style="margin: 0.5rem 0;">🔥 Git 워크플로우</li>
+                        <li style="margin: 0.5rem 0;">🔥 API 디자인 패턴</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>태그</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;">
+                        <span style="background-color: var(--primary-color); color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">JavaScript</span>
+                        <span style="background-color: var(--secondary-color); color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">React</span>
+                        <span style="background-color: var(--primary-color); color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">CSS</span>
+                        <span style="background-color: var(--secondary-color); color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">UX</span>
+                        <span style="background-color: var(--primary-color); color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">Node.js</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 MyWebsite. All rights reserved.</p>
+        </footer>
+
+        <script src="/test/script.js"></script>
+    </body>
+</html>

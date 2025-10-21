@@ -1,13 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
     <head>
-        <title>메인페이지!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>메인페이지 - 환영합니다!</title>
+        <link rel="stylesheet" href="/test/styles.css">
     </head>
     <body>
-        <h1>안녕하세요!</h1>
-        <p>메인 페이지에 오신 것을 환영합니다.</p>
-        <a href="/test/">메인 페이지로 이동</a>
-        <a href="/test/about">소개 페이지로 이동</a>
-        <a href="/test/contact">연락처 페이지로 이동</a>
+        <nav>
+            <div class="nav-container">
+                <a href="/test/" class="logo">MyWebsite</a>
+                <div class="nav-links">
+                    <a href="/test/">홈</a>
+                    <a href="/test/about">소개</a>
+                    <a href="/test/services">서비스</a>
+                    <a href="/test/blog">블로그</a>
+                    <a href="/test/contact">연락처</a>
+                    <button id="theme-toggle" class="theme-toggle">🌙 다크 모드</button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="header-section">
+                <h1>안녕하세요! 👋</h1>
+                <p>우리 웹사이트에 오신 것을 환영합니다</p>
+            </div>
+
+            <div class="card-grid">
+                <div class="card">
+                    <h2>🎨 현대적인 디자인</h2>
+                    <p>깔끔하고 현대적인 디자인으로 최고의 사용자 경험을 제공합니다.</p>
+                    <a href="/test/about" class="btn">더 알아보기</a>
+                </div>
+
+                <div class="card">
+                    <h2>💼 전문 서비스</h2>
+                    <p>다양한 전문 서비스를 통해 여러분의 비즈니스를 성장시킵니다.</p>
+                    <a href="/test/services" class="btn">서비스 보기</a>
+                </div>
+
+                <div class="card">
+                    <h2>📝 블로그</h2>
+                    <p>최신 정보와 유용한 팁을 블로그에서 확인하세요.</p>
+                    <a href="/test/blog" class="btn">블로그 보기</a>
+                </div>
+            </div>
+
+            <div class="card-grid" style="margin-top: 3rem;">
+                <div class="card">
+                    <div class="service-icon">⚡</div>
+                    <h3>빠른 성능</h3>
+                    <p>최적화된 코드로 빠른 로딩 속도를 제공합니다.</p>
+                </div>
+
+                <div class="card">
+                    <div class="service-icon">📱</div>
+                    <h3>반응형 디자인</h3>
+                    <p>모든 기기에서 완벽하게 작동합니다.</p>
+                </div>
+
+                <div class="card">
+                    <div class="service-icon">🔒</div>
+                    <h3>안전한 보안</h3>
+                    <p>고객의 정보를 안전하게 보호합니다.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 MyWebsite. All rights reserved.</p>
+            <p>만든 날짜: <span id="current-date"></span></p>
+        </footer>
+
+        <script src="/test/script.js"></script>
+        <script>
+            document.getElementById('current-date').textContent = new Date().toLocaleDateString('ko-KR');
+        </script>
     </body>
 </html>
